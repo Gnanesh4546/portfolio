@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            background-image: linear-gradient(to bottom, #f7f7f7, #ffecb3);
+        }
+
+        header {
+            background-color: #44c9fa;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 5px solid #44c9fa;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.4em;
+            font-weight: bold;
+            text-shadow: 2px 2px #44c9fa;
+        }
+
+        header p {
+            margin: 10px 0 20px;
+            font-size: 1.1em;
+            color: #fff; /* Changed color to white for better readability */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ccc;
+        }
+
+        section {
+            padding: 30px;
+            background: #fff;
+            margin: 30px auto;
+            max-width: 800px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #about {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #about img {
+            width: 150px; /* Increased size */
+            border-radius: 50%;
+            border: 3px solid #8e44ad;
+            margin-right: 30px;
+        }
+
+        #about h3 {
+            margin-top: 0;
+        }
+
+        #about ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #about ul h4 {
+            margin: 10px 0 5px;
+        }
+
+        #about ul li {
+            margin-bottom: 10px;
+        }
+
+        .skills-section {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .skill-container {
+            margin: 20px 0;
+        }
+
+        .skill-bar {
+            position: relative;
+            width: 100%;
+            background-color: #ddd;
+            border-radius: 25px;
+            margin: 10px auto;
+            height: 25px;
+        }
+
+        .skill-bar-fill {
+            height: 100%;
+            border-radius: 25px;
+            text-align: center;
+            line-height: 25px;
+            color: #fff;
+            background-color: rgb(190, 248, 102);
+        }
+
+        .html { width: 90%; }
+        .css { width: 85%; }
+        .javascript { width: 80%; }
+        .python { width: 75%; }
+       .C { width: 75%; }
+
+        .project {
+            margin-bottom: 30px;
+            border-radius: 10px;
+            overflow: hidden; /* Ensure image and text fit inside the container */
+        }
+
+        .project-bar {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+
+        .project img {
+            width: 40%; /* Reduced size */
+            height: auto;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+        .project-content {
+            width: 60%;
+        }
+
+        .project-number {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            transition: border-color 0.3s;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: #7a288a;
+            outline: none;
+        }
+
+        .contact-form button {
+            background-color:#7a288a;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 10px;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color:rgb(177, 250, 68);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #44c9fa;
+            color: #fff;
+            border-top: 5px solid #44c9fa;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>VUYYURU GNANESH</h1>
+        <p>Hello! I am interested in web development, coding, UI/UX design, 
+			and machine learning applications in web platforms.</p>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <img src="https://img.freepik.com/premium-photo/stylish-man-flat-vector-profile-picture-ai-generated_606187-309.jpg" alt="Profile Picture">
+        <div>
+            <h3>V.GNANESH</h3>
+            <h3>Education Qualifications</h3>
+            <ul>
+                <li>
+                    <h4>Intermediate</h4>
+                    Bhashyam Jr College, Board of Intermediate Education, Andhra Pradesh <br> 2020 - 2022
+                </li>
+                <li>
+                    <h4>B Tech</h4>
+                    Vignan's University,Vadlamuid,  Guntur <br> 2022 - 2026
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="skills-section">
+        <h2>Skills</h2>
+        <div class="skill-container">
+            <h3>HTML</h3>
+            <div class="skill-bar">
+                <div class="skill-bar-fill html">90%</div>
+            </div>
+        </div>
+        <div class="skill-container">
+            <h3>CSS</h3>
+            <div class="skill-bar">
+                <div class="skill-bar-fill css">85%</div>
+            </div>
+        </div>
+        <div class="skill-container">
+            <h3>JavaScript</h3>
+            <div class="skill-bar">
+                <div class="skill-bar-fill javascript">80%</div>
+            </div>
+        </div>
+        <div class="skill-container">
+            <h3>Python</h3>
+            <div class="skill-bar">
+                <div class="skill-bar-fill python">75%</div>
+            </div>
+             </div>
+        <div class="skill-container">
+            <h3>C</h3>
+            <div class="skill-bar">
+                <div class="skill-bar-fill python">75%</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <div class="project-bar">
+                <img src="https://ars.els-cdn.com/content/image/1-s2.0-S277315372300049X-ga1.jpg" alt="Online Hotel Booking System">
+                <div class="project-content">
+                    <span class="project-number">Project 1:</span>
+                    <h3>Solar power generation Forecasting</h3>
+                    <p>Developed a predictive model using machine learning algorithms to forecast solar power generation, enabling optimal energy resource planning and reducing reliance on fossil fuels. Utilized historical weather data, solar panel specifications, and advanced data analytics to predict energy output with high accuracy. Built using Python, TensorFlow, and scikit-learn, with integration into a solar farm management system
+
+View Project</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-bar">
+                <img src="https://media.istockphoto.com/id/1187320693/photo/the-farmer-holds-a-money-bag-on-the-background-of-plantations-lending-and-subsidizing-farmers.jpg?s=612x612&w=0&k=20&c=mpXsJO0x11Nro_AC6OdWXlfV9jYeiTOYKSMCZfFktco=" alt="Agriculture Selling Product System">
+                <div class="project-content">
+                    <span class="project-number">Project 2:</span>
+                    <h3>Agriculture Selling Product System</h3>
+                    <p>This platform connects farmers directly with consumers, enabling easy transactions for agricultural products. It features product listings, search functionality, and a secure payment gateway to facilitate smooth sales and purchases, benefiting both sellers and buyers.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-bar">
+                <img src="https://media.istockphoto.com/id/1205217071/photo/walmart-store-entrance.jpg?s=612x612&w=0&k=20&c=Kt5_hQkAWGpsR4m67gVyaCMTK_MmlJOQGiNPS7rfSXQ=" alt="Walmart sales prediction ">
+                <div class="project-content">
+                    <span class="project-number">Project 3:</span>
+                    <h3>Walmart Sales Prediction</h3>
+                    <p>A machine learning model designed to predict Walmart sales based on historical data. It utilizes various data analysis techniques to forecast future sales trends, providing valuable insights for inventory management and strategic planning.</p>
+                </div>
+            </section>
+    
+            <section id="contact">
+                <h2>Contact Me</h2>
+                <form class="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+        
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+        
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+        
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+        <footer>
+            <div class="footer-content">
+                <ul>
+            <h2><b>You can also reach me at:</b></h2>
+            <a href="mailto:knithinchandra2004@gmail.com"><u>E-MAIL</u>:knithinchandra2004@gmail.com</a></div>
+	<div>
+            <a href="https://www.linkedin.com/in/Nithin-chandra-0b3081323?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><u>LinkedIn</u>: https://www.linkedin.com/in/Nithin-chandra-0b3081323?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app</a>
+        </div>
+
+                <p>&copy; 2024 Nithin chandra. All rights reserved.</p>
+            </div>
+        </footer>
+    
+        <script src="script.js"></script>
+    </body>
+    
+    </html>
